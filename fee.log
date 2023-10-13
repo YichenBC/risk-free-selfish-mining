@@ -1,0 +1,190 @@
+We vary the number of validators in the mining pool from 0(0%) to 99(33.33%). 
+the original expected number of blocks of the mining pool in the canonical chain during an epoch: [  8.08080808  16.16161616  24.24242424  32.32323232  40.4040404
+  48.48484848  56.56565657  64.64646465  72.72727273  80.80808081
+  88.88888889  96.96969697 105.05050505 113.13131313 121.21212121
+ 129.29292929 137.37373737 145.45454545 153.53535354 161.61616162
+ 169.6969697  177.77777778 185.85858586 193.93939394 202.02020202
+ 210.1010101  218.18181818 226.26262626 234.34343434 242.42424242
+ 250.50505051 258.58585859 266.66666667 274.74747475 282.82828283
+ 290.90909091 298.98989899 307.07070707 315.15151515 323.23232323
+ 331.31313131 339.39393939 347.47474747 355.55555556 363.63636364
+ 371.71717172 379.7979798  387.87878788 395.95959596 404.04040404
+ 412.12121212 420.2020202  428.28282828 436.36363636 444.44444444
+ 452.52525253 460.60606061 468.68686869 476.76767677 484.84848485
+ 492.92929293 501.01010101 509.09090909 517.17171717 525.25252525
+ 533.33333333 541.41414141 549.49494949 557.57575758 565.65656566
+ 573.73737374 581.81818182 589.8989899  597.97979798 606.06060606
+ 614.14141414 622.22222222 630.3030303  638.38383838 646.46464646
+ 654.54545455 662.62626263 670.70707071 678.78787879 686.86868687
+ 694.94949495 703.03030303 711.11111111 719.19191919 727.27272727
+ 735.35353535 743.43434343 751.51515152 759.5959596  767.67676768
+ 775.75757576 783.83838384 791.91919192 800.        ]
+the extra expected number of blocks of the mining pool in the canonical chain in above four scenarios during an epoch: [4.44119678e-03 1.76385749e-02 3.94037604e-02 6.95496446e-02
+ 1.07890392e-01 1.54241448e-01 2.08419546e-01 2.70242715e-01
+ 3.39530284e-01 4.16102894e-01 4.99782499e-01 5.90392377e-01
+ 6.87757132e-01 7.91702704e-01 9.02056372e-01 1.01864676e+00
+ 1.14130385e+00 1.26985896e+00 1.40414479e+00 1.54399541e+00
+ 1.68924624e+00 1.83973409e+00 1.99529715e+00 2.15577499e+00
+ 2.32100857e+00 2.49084024e+00 2.66511376e+00 2.84367427e+00
+ 3.02636833e+00 3.21304389e+00 3.40355034e+00 3.59773845e+00
+ 3.79546042e+00 3.99656988e+00 4.20092185e+00 4.40837281e+00
+ 4.61878065e+00 4.83200468e+00 5.04790565e+00 5.26634574e+00
+ 5.48718857e+00 5.71029918e+00 5.93554407e+00 6.16279117e+00
+ 6.39190982e+00 6.62277085e+00 6.85524649e+00 7.08921045e+00
+ 7.32453785e+00 7.56110527e+00 7.79879073e+00 8.03747371e+00
+ 8.27703510e+00 8.51735728e+00 8.75832403e+00 8.99982062e+00
+ 9.24173373e+00 9.48395149e+00 9.72636350e+00 9.96886078e+00
+ 1.02113358e+01 1.04536825e+01 1.06957961e+01 1.09375736e+01
+ 1.11789130e+01 1.14197142e+01 1.16598782e+01 1.18993076e+01
+ 1.21379063e+01 1.23755797e+01 1.26122347e+01 1.28477796e+01
+ 1.30821241e+01 1.33151793e+01 1.35468577e+01 1.37770734e+01
+ 1.40057418e+01 1.42327796e+01 1.44581050e+01 1.46816379e+01
+ 1.49032991e+01 1.51230112e+01 1.53406980e+01 1.55562848e+01
+ 1.57696983e+01 1.59808667e+01 1.61897192e+01 1.63961869e+01
+ 1.66002019e+01 1.68016980e+01 1.70006101e+01 1.71968747e+01
+ 1.73904295e+01 1.75812136e+01 1.77691677e+01 1.79542337e+01
+ 1.81363547e+01 1.83154754e+01 1.84915418e+01]
+the original expected number of blocks of honest validators in the canonical chain during an epoch: [2391.91919192 2383.83838384 2375.75757576 2367.67676768 2359.5959596
+ 2351.51515152 2343.43434343 2335.35353535 2327.27272727 2319.19191919
+ 2311.11111111 2303.03030303 2294.94949495 2286.86868687 2278.78787879
+ 2270.70707071 2262.62626263 2254.54545455 2246.46464646 2238.38383838
+ 2230.3030303  2222.22222222 2214.14141414 2206.06060606 2197.97979798
+ 2189.8989899  2181.81818182 2173.73737374 2165.65656566 2157.57575758
+ 2149.49494949 2141.41414141 2133.33333333 2125.25252525 2117.17171717
+ 2109.09090909 2101.01010101 2092.92929293 2084.84848485 2076.76767677
+ 2068.68686869 2060.60606061 2052.52525253 2044.44444444 2036.36363636
+ 2028.28282828 2020.2020202  2012.12121212 2004.04040404 1995.95959596
+ 1987.87878788 1979.7979798  1971.71717172 1963.63636364 1955.55555556
+ 1947.47474747 1939.39393939 1931.31313131 1923.23232323 1915.15151515
+ 1907.07070707 1898.98989899 1890.90909091 1882.82828283 1874.74747475
+ 1866.66666667 1858.58585859 1850.50505051 1842.42424242 1834.34343434
+ 1826.26262626 1818.18181818 1810.1010101  1802.02020202 1793.93939394
+ 1785.85858586 1777.77777778 1769.6969697  1761.61616162 1753.53535354
+ 1745.45454545 1737.37373737 1729.29292929 1721.21212121 1713.13131313
+ 1705.05050505 1696.96969697 1688.88888889 1680.80808081 1672.72727273
+ 1664.64646465 1656.56565657 1648.48484848 1640.4040404  1632.32323232
+ 1624.24242424 1616.16161616 1608.08080808 1600.        ]
+the reduced expected number of blocks of honest validators in the canonical chain in above four scenarios during an epoch: [8.54745631e-03 3.40410988e-02 7.62588674e-02 1.34980068e-01
+ 2.09985365e-01 3.01056773e-01 4.07977650e-01 5.30532686e-01
+ 6.68507897e-01 8.21690616e-01 9.89869484e-01 1.17283444e+00
+ 1.37037672e+00 1.58228882e+00 1.80836454e+00 2.04839891e+00
+ 2.30218824e+00 2.56953005e+00 2.85022312e+00 3.14406745e+00
+ 3.45086424e+00 3.77041589e+00 4.10252602e+00 4.44699939e+00
+ 4.80364197e+00 5.17226087e+00 5.55266434e+00 5.94466178e+00
+ 6.34806373e+00 6.76268182e+00 7.18832879e+00 7.62481850e+00
+ 8.07196587e+00 8.52958687e+00 8.99749857e+00 9.47551906e+00
+ 9.96346747e+00 1.04611640e+01 1.09684297e+01 1.14850868e+01
+ 1.20109585e+01 1.25458689e+01 1.30896430e+01 1.36421069e+01
+ 1.42030876e+01 1.47724130e+01 1.53499118e+01 1.59354138e+01
+ 1.65287496e+01 1.71297505e+01 1.77382491e+01 1.83540783e+01
+ 1.89770723e+01 1.96070658e+01 2.02438944e+01 2.08873947e+01
+ 2.15374037e+01 2.21937595e+01 2.28563008e+01 2.35248670e+01
+ 2.41992983e+01 2.48794356e+01 2.55651206e+01 2.62561955e+01
+ 2.69525032e+01 2.76538874e+01 2.83601922e+01 2.90712627e+01
+ 2.97869443e+01 3.05070830e+01 3.12315257e+01 3.19601194e+01
+ 3.26927122e+01 3.34291522e+01 3.41692884e+01 3.49129702e+01
+ 3.56600476e+01 3.64103708e+01 3.71637909e+01 3.79201590e+01
+ 3.86793271e+01 3.94411472e+01 4.02054720e+01 4.09721546e+01
+ 4.17410483e+01 4.25120069e+01 4.32848846e+01 4.40595358e+01
+ 4.48358154e+01 4.56135784e+01 4.63926804e+01 4.71729769e+01
+ 4.79543240e+01 4.87365779e+01 4.95195951e+01 5.03032323e+01
+ 5.10873464e+01 5.18717946e+01 5.26564341e+01]
+extra fee of overall attacks:
+ [0.10577477 0.2106293  0.31456783 0.41759459 0.51971378 0.6209296
+ 0.7212462  0.82066775 0.91919836 1.01684214 1.11360317 1.20948552
+ 1.30449322 1.3986303  1.49190075 1.58430853 1.67585761 1.76655191
+ 1.85639532 1.94539173 2.033545   2.12085894 2.20733737 2.29298406
+ 2.37780278 2.46179724 2.54497115 2.6273282  2.70887202 2.78960625
+ 2.86953448 2.94866028 3.0269872  3.10451875 3.18125842 3.25720968
+ 3.33237594 3.40676063 3.48036711 3.55319873 3.62525882 3.69655065
+ 3.76707749 3.83684257 3.90584909 3.97410023 4.04159912 4.10834887
+ 4.17435257 4.23961326 4.30413397 4.36791768 4.43096735 4.49328591
+ 4.55487625 4.61574124 4.6758837  4.73530645 4.79401224 4.85200382
+ 4.90928388 4.9658551  5.02172012 5.07688155 5.13134195 5.18510388
+ 5.23816984 5.2905423  5.3422237  5.39321647 5.44352296 5.49314553
+ 5.54208648 5.59034808 5.63793258 5.68484219 5.73107907 5.77664537
+ 5.82154319 5.8657746  5.90934163 5.9522463  5.99449056 6.03607635
+ 6.07700556 6.11728007 6.15690169 6.19587223 6.23419343 6.27186703
+ 6.30889472 6.34527814 6.38101892 6.41611863 6.45057884 6.48440104
+ 6.51758672 6.55013733 6.58205426]
+extra fee of risk-free attack:
+ [0.02251225 0.04480568 0.06688124 0.08873986 0.11038248 0.13181001
+ 0.15302338 0.17402351 0.19481131 0.21538769 0.23575357 0.25590983
+ 0.27585738 0.29559711 0.31512991 0.33445666 0.35357825 0.37249554
+ 0.39120942 0.40972075 0.42803039 0.4461392  0.46404805 0.48175778
+ 0.49926923 0.51658327 0.53370071 0.55062241 0.56734918 0.58388187
+ 0.60022129 0.61636826 0.6323236  0.64808813 0.66366264 0.67904795
+ 0.69424486 0.70925416 0.72407664 0.7387131  0.75316432 0.76743108
+ 0.78151416 0.79541434 0.80913238 0.82266905 0.83602511 0.84920133
+ 0.86219846 0.87501725 0.88765844 0.90012279 0.91241104 0.92452391
+ 0.93646216 0.9482265  0.95981766 0.97123636 0.98248333 0.99355928
+ 1.00446493 1.01520097 1.02576812 1.03616708 1.04639855 1.05646322
+ 1.06636178 1.07609493 1.08566334 1.0950677  1.10430868 1.11338696
+ 1.12230322 1.13105811 1.1396523  1.14808645 1.15636123 1.16447728
+ 1.17243526 1.18023581 1.18787958 1.1953672  1.20269933 1.20987658
+ 1.2168996  1.22376901 1.23048544 1.2370495  1.24346182 1.24972301
+ 1.25583369 1.26179446 1.26760593 1.27326869 1.27878337 1.28415054
+ 1.2893708  1.29444474 1.29937295]
+simulation:
+(3.3333333333333335,0.93125)
+(6.666666666666667,1.7875)
+(10.0,2.7395833333333335)
+(13.333333333333334,3.471875)
+(16.666666666666664,4.1875)
+(20.0,4.963541666666667)
+(23.333333333333332,5.376785714285714)
+(26.666666666666668,5.86796875)
+(30.0,6.289583333333334)
+(33.33333333333333,6.606875)
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
+findfont: Generic family 'sans-serif' not found because none of the following families were found: SimHei
