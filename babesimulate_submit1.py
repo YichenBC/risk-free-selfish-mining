@@ -145,47 +145,51 @@ for j in range(1,11):
 
         # for simplicity, we detect the pattern of adversarial blocks such as "primary-primary-empty" scenario to trigger our selfish mining attack.
         # "primary-primary-empty" falls into the scenario of risk-free strategy.
-
         # adv ppe
         if(flagadvpri1 and flagadvpri2 and not flagadvpri3 and flaghonestsec3):
             lastpepeindex = i + 2
 
             countppe = countppe + 1
-            # case hon slot12 no pri
             # The honest validators are eligible to propose no primary block in slot_1 and slot_2
             if(not flaghonestpri1 and not flaghonestpri2):
                 counthonestlost = counthonestlost +1
-            # case hon slot1 primary, slot2 no primary
+            # The honest validators are eligible to propose at least one primary block in slot_1 and no primary block in slot_2
             if(flaghonestpri1 and not flaghonestpri2):
                 countadvearn = countadvearn + 1/2
                 counthonestlost = counthonestlost +1/2
-            # case hon slot1 no priamry, slot2 primary
+            # The honest validators are eligible to propose no primary block in slot_1 and at least one primary block in slot_2
             if(not flaghonestpri1 and flaghonestpri2):
                 countadvearn = countadvearn + 1 / 2
                 counthonestlost = counthonestlost + 1 / 2
-            # case hon slot1 primary, slot2 primary
+            # The honest validators are eligible to propose at least one primary block in slot_1 and at least one primary block in slot_2
             if(flaghonestpri1  and flaghonestpri2):
                 countadvearn = countadvearn + 1
                 counthonestlost = counthonestlost + 1
 
         # first scenario of the risk-taking strategy
+        # the validators in the mining pool are eligible to propose one secondary block at slot_1 and at least one primary block at slot_2 and no block at slot_3
         # spe
         if(not flagadvpri1 and flagadvsec1 and flagadvpri2 and not flagadvpri3 and flaghonestsec3):
             lastpepeindex = i + 2
             countspe = countspe + 1
+            # The honest validators are eligible to propose at least one primary block in slot_1 and no primary block in slot_2
             if(flaghonestpri1) and not flaghonestpri2:
                 countadvearn = countadvearn +1
                 counthonestlost = counthonestlost + 1
+            # The honest validators are eligible to propose at least one primary block in slot_1 and at least one primary block in slot_2
             if(flaghonestpri1 and flaghonestpri2):
                 counthonestearn = counthonestearn + 1/2
                 countadvlost = countadvlost + 1/2
+            # The honest validators are eligible to propose no primary block in slot_1 and at least one primary block in slot_2
             if(flaghonestpri2 and not flaghonestpri1 ):
                 counthonestlost = counthonestlost + 1/2
                 countadvearn = countadvearn + 1/2
+            # The honest validators are eligible to propose no primary block in slot_1 and no primary block and no secondary block in slot_2
             if(not flaghonestpri1 and not flaghonestpri2 and flagadvsec2):
                 counthonestlost = counthonestlost + 1
 
         # another scenario of the risk-taking strategy. result is the same as the first scenario of the risk-taking strategy.
+        # the validators in the mining pool are eligible to propose at least one primary block at slot_1 and one secondary block at slot_2 and no block at slot_3
         # pse
         if ( not flagadvpri2 and flagadvsec2 and flagadvpri1 and not flagadvpri3 and flaghonestsec3):
             lastpepeindex = i + 2
@@ -209,6 +213,7 @@ for j in range(1,11):
 
         # second scenario of the risk-taking strategy
         # pepe
+        # the validators in the mining pool are eligible to propose at least one primary block at slot_1 and at least one primary block at slot_3
         if(flagadvpri1 and not flagadvpri2 and flagadvpri3 and not flagadvpri4 and not flagadvsec4 and not flagadvsec2):
             if(i>lastpepeindex):
                 lastpepeindex = i+3
