@@ -1,7 +1,7 @@
 import random
 
-# in this script, we simulate the behaviors of the mining pool in risk-free strategy.
-# in an attack instance, the private branch would replace public branch as new canonical chain.
+# In this script, we simulate the behaviors of the mining pool in risk-free strategy.
+# In an attack instance, the private branch would replace public branch as new canonical chain.
 # So we count the number of blocks of adversary and honest validators in the original and new canonical chain to quantify our attack's extra fee and payout
 
 feelist = []
