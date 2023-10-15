@@ -1,5 +1,9 @@
 import random
 
+# In this script, we simulate babe, the block production mechanism, according to Polkadot's specification.
+# For simplicity, we detect the scenarios that triggers the risk-free and risk-taking selfish mining according to the initiation condition.
+# And in such scenario, honest validators have multiple cases for block proposal. Eventually, different cases lead to different attack results according to the strategy.
+# We simply detect these cases and count the discarded blocks and extra blocks of honest validators and the mining pool according to different attack cases.
 
 feelist = []
 rewardlist = []
