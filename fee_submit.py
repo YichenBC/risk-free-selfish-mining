@@ -182,7 +182,9 @@ fee_extra_riskfree=honppe_loss*epoch_ppe
 
 # simulation results
 y = [74.5, 286.0, 657.5, 1111.0, 1675.0, 2382.5, 3011.0, 3755.5, 4528.5, 5285.5]
+y1 = [13.5, 73.0, 114.0, 214.5, 373.5, 443.5, 633.0, 789.0, 932.0, 1045.0]
 y = np.array(y)
+y1 = np.array(y1)
 x = [1,2,3,4,5,6,7,8,9,10]
 x = np.array(x)
 # the original expected number of blocks of the mining pool in the canonical chain with different fraction of the mining pool's stake.
@@ -195,6 +197,8 @@ plt.plot(100*t/n, 100*fee_extra_risktaking/fee_original, label = "overall extra 
 plt.plot(100*t/n, 100*fee_extra_riskfree/fee_original, label = 'risk-free extra fee')
 # simulation results.
 plt.plot(x/30*100, y/fees, label = "simulated overall extra fee")
+plt.plot(x/30*100, y1/fees, label = "simulated extra fee in risk-free selfish mining")
+
 plt.legend()
 print("extra fee of overall attacks:\n", 100*fee_extra_risktaking/fee_original)
 print("extra fee of risk-free attack:\n", 100*fee_extra_riskfree/fee_original)

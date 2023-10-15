@@ -183,6 +183,8 @@ reward_riskfree=(2400*t/n+advppe_earn*epoch_ppe)/(2400*t/n+advppe_earn*epoch_ppe
 # simulation results
 y = [0.004554089328031868, 0.009225769124559075, 0.014596894383519318, 0.018928105800812348, 0.023246331620849502, 0.027549553846878072, 0.02942376326697499, 0.03253404759632719, 0.03577646489065644, 0.03806334410479062]
 y = np.array(y)
+y1 = [0.000761164345005036, 0.00117931024098175, 0.002097632856984381, 0.0033776644122341117, 0.0033407049475137575, 0.004211503979873121, 0.004894198602326772, 0.005153060220558849, 0.005555668157704805, 0.005948691640087844]
+y1 = np.array(y1)
 x = [1,2,3,4,5,6,7,8,9,10]
 x = np.array(x)
 plt.xlabel('fraction of adv stake%')
@@ -193,6 +195,8 @@ plt.plot(100*t/n, 100*(reward_risktaking-reward_original)/reward_original,label=
 plt.plot(100*t/n, 100*(reward_riskfree-reward_original)/reward_original,label = 'extra reward of risk-free attack')
 # simulation results.
 plt.plot(x/30*100 ,y*100,  label= 'extra reward of simulation results')
+plt.plot(x/30*100 ,y1*100,  label= 'extra reward of simulation results in risk-free strategy')
+
 plt.legend()
 print('extra reward of overall attacks:\n', 100*(reward_risktaking-reward_original)/reward_original)
 print('extra reward of risk-free attack:\n', 100*(reward_riskfree-reward_original)/reward_original)
